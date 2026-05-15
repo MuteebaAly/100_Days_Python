@@ -25,11 +25,11 @@ print('''\nWelcome To Treasure Island 🏝️
 Your Mission Is To Find the Treasure 💰
 ''')
 
-dir1 = input('In Which Direction Do You Want To Go? Left or Right? ').lower()
+dir1 = input('In Which Direction Do You Want To Go To find out Box? Left or Right? ').lower()
 
 if dir1 == 'right':
     print('''GAME OVER 💀
-Congratulations! You found disaster instead of Treasure box 😂''')
+Congratulations! You fell into the well and  found disaster instead of Treasure box 😂''')
 
 elif dir1 == 'left':
     print('''You chose the Best Direction 🤩''')
