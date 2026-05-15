@@ -25,25 +25,28 @@ print('''\nWelcome To Treasure Island 🏝️
 Your Mission Is To Find the Treasure 💰
 ''')
 
+
+name=input('Enter Your Name: ')
+
 dir1 = input('In Which Direction Do You Want To Go To find out Box? Left or Right? ').lower()
 
 if dir1 == 'right':
-    print('''GAME OVER 💀
-Congratulations! You fell into the well and  found disaster instead of Treasure box 😂''')
+    print(f'''GAME OVER 💀
+Congratulations! {name} You fell into the well and  found disaster instead of Treasure box 😂''')
 
 elif dir1 == 'left':
-    print('''You chose the Best Direction 🤩''')
+    print(f'''{name} You chose the Best Direction 🤩''')
     dir2 = input("Will you swim or just wait for boat? ").lower()
 
     if dir2 == 'swim':
-        print('''GAME OVER 💀
-You jumped into the water...
+        print(f'''GAME OVER 💀
+{name} You jumped into the water...
 The fish are still laughing at you 🐟😂
 ''')
 
     elif dir2 == 'wait':
-        print('''Good choice 😂
-You survived without becoming fish food 🌊''')
+        print(f'''Good choice 😂
+{name} You survived without becoming fish food 🌊''')
         
         door = input('''Now choose a door 🚪
 Red, Blue, or Yellow?
@@ -51,16 +54,16 @@ Choose wisely... one of them is professionally dangerous 💀:
 ''').lower()
 
         if door == 'red':
-            print('''GAME OVER 💀
+            print(f'''GAME OVER {name} 💀
 The Red Door was full of fire and danger 🔥
 Bro got cooked instantly 😂
 ''')
         elif door == 'blue':
-            print('''GAME OVER 💀
+            print(f'''GAME OVER 💀
 Behind the Blue Door was a hungry shark 🦈
-You became today's seafood special 😂''')
+{name} Now You became today's seafood special 😂''')
         elif door == 'yellow':
-            print('''YOU WIN 🏆✨
+            print(f'''{name} YOU WIN 🏆✨
 Behind the Yellow Door was treasure and freedom 💰🚪
 For once... your luck actually worked 😂
 ''')
