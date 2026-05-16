@@ -51,7 +51,7 @@ elif Human_choice==1 :
     if computer_choice==0:
         print(f'Computer chose {computer_choice}\n {rock} \n {Name} Congratulations!!! You Win this game 🤩😃🥳')
     elif computer_choice==1:
-        print(f'Computer chose {computer_choice}\n {paper} \n Game is Tie 😊 No One Win this game')
+        print(f'Computer chose {computer_choice}\n {paper} \n {Name} Game is Tie 😊 No One Win this game')
     elif computer_choice==2:
         print(f'Computer chose {computer_choice}\n {scissor} \n {Name} You Lose this game😕😖')
     
