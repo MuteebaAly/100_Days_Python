@@ -14,6 +14,7 @@ all_letters=string.ascii_letters
 #print(all_letters)
 
 #string.punctaution contains all the special characters
+
 all_symbols=string.punctuation
 #print(all_symbols)
 
