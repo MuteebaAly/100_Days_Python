@@ -9,4 +9,4 @@ A simple Python tool that generates unique, randomized passwords based on user p
 * **Shuffle Function:** Uses `random.shuffle()` to completely mix all characters so the final pattern is unpredictable.
 
 ##  Output
-Combines all shuffled characters to generate and display a highly secure password.
+Combines all shuffled characters to generate and display a password.
