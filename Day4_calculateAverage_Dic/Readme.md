@@ -1,4 +1,4 @@
-# Student Average Marks Finder
+# Student Average Marks Finder 
 
 ### Project Objective
 This script calculates the average marks for a specific student:
