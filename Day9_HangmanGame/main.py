@@ -10,7 +10,7 @@ print(r"""
                    |___/          """)
 
 
-words_list = ["pakistan", "blossom", "aesthetic", "gatekeeper", "almirah", "suspicious"]
+words_list = ["pakistan", "blossom", "aesthetic", "gatekeeper", "almirah", "suspicious",'sliper',"poems","multitalennted","hangman","flower"]
 
 word = random.choice(words_list)
 dash = []
@@ -23,7 +23,7 @@ life = 6
 guess = "" 
 
 while life > 0:
-    guess = input("Guess a Letter: ")
+    guess = input("Guess a Letter: ").lower()
     
     if guess in word:
         for i in range(len(word)):
