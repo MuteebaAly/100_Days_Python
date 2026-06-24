@@ -39,7 +39,7 @@ while exit_option != 'no':
                     index_i = (j + shift) % 26   
                     encrypt.append(alphabets[index_i])
         
-        print(f"👉 Encrypted Message is: {''.join(encrypt)}")
+        print(f"Encrypted Message is: {''.join(encrypt)}")
         print() 
         exit_option = input("Write 'yes' to go again, otherwise write 'no': ").lower()
         print()
