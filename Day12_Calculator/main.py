@@ -60,7 +60,6 @@ while True:
         print(f"Invalid operation {operation} please write correct one")
         continue
 
-
     continue_option=input(f"Type 'y' to continue with {result}, 'n' to restart, 'q' to quit: ").lower()
 
     if continue_option=='y':
