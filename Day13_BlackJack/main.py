@@ -19,9 +19,15 @@ def computer():
             for i in range(len(computer_card)):
                 card_sum+=computer_card[i]
             print("computer card sum : ", card_sum )
-            
-    if card_sum==21:
-        print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card} \n ------ Computre Win The Game --------')
+
+        elif card_sum>21:
+            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
+            print(f"Computer Loose Game:( ")
+            break
+        elif card_sum==21:
+            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card} \n ------ Computre Win The Game --------')
+            break
+        
 
 
 
@@ -29,22 +35,28 @@ def computer():
 def human():
     card_choice=''
     human_card_sum=0
-    
-                
+                    
     while True:
+
+        for i in range(len(human_card)):
+                human_card_sum+=human_card[i]
+                #print(human_card_sum , "card human sum ")
+
+
         card_choice=input("\n Do you want to hit or stand? Means want more card or not? if yes type 'y' otherwise type 'n' : ").lower()
 
+
         if card_choice=='y':
-            human_card.append(random.choice(cards))
+            n=human_card.append(random.choice(cards))
+            human_card_sum+=n
             print(human_card)
-            for i in range(len(human_card)):
-                human_card_sum+=human_card[i]
-                            #print(human_card_sum , "card human sum ")
-            if human_card_sum>21:
+        
+        
+        if human_card_sum>21:
                 print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
                 print(f"You Loose Game:( ")
                 break
-            elif human_card_sum==21:
+        elif human_card_sum==21:
                 print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
                 print("You Win Game:( Bcz your card_sum is {human_card_sum} thats equal to 21")
                 break 
