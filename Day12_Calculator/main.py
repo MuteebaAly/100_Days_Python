@@ -14,20 +14,16 @@ print("""
 |_____________________|\n""")
 
 def addition(n1,n2):
-    result=n1+n2
-    return result
+    return n1+n2
 
 def subtraction(n1,n2):
-    result=n1-n2
-    return result
+    return n1-n2
 
 def multiply(n1,n2):
-    result=n1*n2
-    return result
+    return n1*n2
 
 def division(n1,n2):
-    result=n1/n2
-    return result
+    return n1/n2
 
 num1=int(input("Enter Num1 : "))
 
