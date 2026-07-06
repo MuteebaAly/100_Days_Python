@@ -10,62 +10,51 @@ print("Computer_card = ",b[2:3])
 
 
 def computer():
-    card_sum=0
+    card_sum=computer_card[0]+computer_card[1]
 
     while card_sum<17:
         if card_sum<17:
-            computer_card.append(random.choice(cards))
-            print(computer_card)
-            for i in range(len(computer_card)):
-                card_sum+=computer_card[i]
+            c=random.choice(cards)
+            computer_card.append(c)
+            card_sum+=c
             print("computer card sum : ", card_sum )
+        else:
+             human()
 
-        elif card_sum>21:
-            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
-            print(f"Computer Loose Game:( ")
+
+        if card_sum>21:
+            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card} \n******* Computer Loose Game:( *********** ")')
             break
         elif card_sum==21:
-            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card} \n ------ Computre Win The Game --------')
+            print(f'Your Final Card: {human_card} \nComputer Final Card: {computer_card} \n------ Computer Win The Game --------')
             break
-        
-
-
 
 
 def human():
     card_choice=''
-    human_card_sum=0
+    human_card_sum=human_card[0]+human_card[1]
+    print(human_card_sum ,"human card sum ")
                     
-    while True:
-
-        for i in range(len(human_card)):
-                human_card_sum+=human_card[i]
-                #print(human_card_sum , "card human sum ")
-
-
+    while card_choice!='n':
         card_choice=input("\n Do you want to hit or stand? Means want more card or not? if yes type 'y' otherwise type 'n' : ").lower()
 
 
         if card_choice=='y':
-            n=human_card.append(random.choice(cards))
+            n=random.choice(cards)
+            human_card.append(n)
             human_card_sum+=n
             print(human_card)
+        else:
+             computer()
         
-        
+
         if human_card_sum>21:
-                print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
-                print(f"You Loose Game:( ")
+                print(f'Your Final Card: {human_card} \nComputer Final Card: {computer_card}')
+                print(f"----------You Loose Game:(----------  ")
                 break
         elif human_card_sum==21:
                 print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card}')
-                print("You Win Game:( Bcz your card_sum is {human_card_sum} thats equal to 21")
-                break 
-        else:
-            computer()
-    
-human()
+                print("********** You Win Game:( ************\n Bcz your card_sum is {human_card_sum} thats equal to 21")
+                break
 
-#card list 
-#2. generate randomly 2 card for both person
-#3. break list  through slicing
-#4. ask from user hit or stand 
+human()
