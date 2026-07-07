@@ -33,10 +33,10 @@ def computer():
 
 
         if card_sum>21:
-            print(f'Your Final Card: {human_card} \n Computer Final Card: {computer_card} \n******* Computer Loose Game:( *********** ')
+            print(f'\nYour Final Card: {human_card} \n Computer Final Card: {computer_card} \n******* Computer Loose Game:( *********** ')
             break
         elif card_sum==21:
-            print(f'Your Final Card: {human_card} \nComputer Final Card: {computer_card} \n------ Computer Win The Game --------')
+            print(f'\nYour Final Card: {human_card} \nComputer Final Card: {computer_card} \n------ Computer Win The Game --------')
             break
 
 
@@ -50,10 +50,13 @@ def human():
 
 
         if card_choice=='y':
-            n=random.choice(cards)
-            human_card.append(n)
-            human_card_sum+=n 
-            #print(human_card)
+            if human_card_sum<21:
+                 n=random.choice(cards)
+                 human_card.append(n)
+                 human_card_sum+=n 
+                 #print(human_card)
+            else:
+                 print("\n---------You Win------")
         else:
              computer()
         
@@ -68,3 +71,15 @@ def human():
                 break
 
 human()
+
+
+
+
+
+# 1. Shuru ke 2-2 cards baantein.
+# 2. Human ka Loop chalayein (Jab tak user 'y' dabaye aur score < 21 rahe).
+# 3. Agar Human ka score > 21 ho jaye -> Wahin print karein "You Loose" aur game khatam.
+# 4. Agar Human 'n' dabaye -> Loop break karein.
+# 5. Ab Computer ka Loop chalayein (Jab tak score < 17 rahe).
+# 6. Agar Computer ka score > 21 ho jaye -> Print karein "Computer Loose" aur game khatam.
+# 7. Agar dono safe hain -> To dono ke scores ko aapas mai COMPARE kar ke winner batayein.
