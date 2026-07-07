@@ -75,7 +75,6 @@ human()
 
 
 
-
 # 1. Shuru ke 2-2 cards baantein.
 # 2. Human ka Loop chalayein (Jab tak user 'y' dabaye aur score < 21 rahe).
 # 3. Agar Human ka score > 21 ho jaye -> Wahin print karein "You Loose" aur game khatam.
